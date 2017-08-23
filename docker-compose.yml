@@ -22,7 +22,7 @@ services:
     build:
       context: app
       # comment out for team edition
-      dockerfile: Dockerfile-enterprise
+      # dockerfile: Dockerfile-enterprise
     restart: unless-stopped
     volumes:
       - ./volumes/app/mattermost/config:/mattermost/config:rw
@@ -51,3 +51,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
     links:
       - app:app
+    environment:
+      - MATTERMOST_ENABLE_SSL=true
+      - PLATFORM_PORT_80_TCP_PORT=80
