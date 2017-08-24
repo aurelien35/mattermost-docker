@@ -1,3 +1,25 @@
+# TODO :
+	Faire un dockerfile pour lancer un serveur nginx :
+		- avec configuration embarquée : le fichier de configuration avec le SSL et les différents virtual host est embarqué à la création de l'image
+		- avec certificats SSL embarqués
+		- un script genere les certificats nécessaires puis lance le build du docker
+		
+		=> comment modifier la configuration de nginx sans devoir le relancer ?
+		
+	Faire un docker-compose.yml pour lancer une instance de mattermost :
+		- prend le nom de l'instance dans l'environnement
+		- lance l'image de bdd
+		- lance l'image de l'application
+		- monte des volumes à partir du nom de l'instance
+
+
+
+
+
+
+
+
+
 # Installation de la machine hôte :
 
 ## Avec root :

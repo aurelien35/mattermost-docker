@@ -30,6 +30,8 @@ services:
       - ./volumes/app/mattermost/logs:/mattermost/logs:rw
       - /etc/localtime:/etc/localtime:ro
     environment:
+      # set name of db server
+      - DB_HOST=db
       # set same as db credentials and dbname
       - MM_USERNAME=mmuser
       - MM_PASSWORD=mmuser_password
@@ -51,6 +53,3 @@ services:
       - /etc/localtime:/etc/localtime:ro
     links:
       - app:app
-    environment:
-      - MATTERMOST_ENABLE_SSL=true
-      - PLATFORM_PORT_80_TCP_PORT=80
