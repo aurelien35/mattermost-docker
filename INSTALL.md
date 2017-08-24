@@ -5,6 +5,10 @@
 		- un script genere les certificats nécessaires puis lance le build du docker
 		
 		=> comment modifier la configuration de nginx sans devoir le relancer ?
+		https://blog.docker.com/2015/04/tips-for-deploying-nginx-official-image-with-docker/
+		https://stackoverflow.com/questions/13525465/when-to-restart-and-not-reload-nginx
+		https://github.com/jwilder/nginx-proxy/issues/377
+		http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/
 		
 	Faire un docker-compose.yml pour lancer une instance de mattermost :
 		- prend le nom de l'instance dans l'environnement
