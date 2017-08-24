@@ -9,6 +9,7 @@
 		https://stackoverflow.com/questions/13525465/when-to-restart-and-not-reload-nginx
 		https://github.com/jwilder/nginx-proxy/issues/377
 		http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/
+		http://blog.tobiasforkel.de/en/2016/08/18/reload-nginx-inside-docker-container/
 		
 	Faire un docker-compose.yml pour lancer une instance de mattermost :
 		- prend le nom de l'instance dans l'environnement
